@@ -1,0 +1,36 @@
+* {
+  padding: 0; /*tamanho da borda*/
+  margin: 0; /*tamanho da margem*/
+  box-sizing: border-box; /*"tamanho" da borda*/
+}
+
+body {
+  display: flex; /*organiza os elemnetos*/
+  align-items: center; /*centraliza*/
+  justify-content: center;/*centraliza*/
+  margin: 0; /*tamanho da margem*/
+  min-height: 100vh; /*tamanho minimo*/
+  background-color: #533a3a; /*cor*/
+}
+
+.carrossel {
+  filter: drop-shadow(10px 10px 10px #887272); /*cor*/
+  overflow: hidden; /*oculta oq passar do carrossel*/
+  width: 1250px; /*tamanho*/
+  height: 740px; /*tamanho*/
+  justify-content: center; /*centraliza*/
+  align-items: center;/*centraliza*/
+}
+
+.container {
+  display: flex; /*organiza os elemnetos*/
+  transition: 0.7s ease-in-out; /*tempo da transição*/
+  transform: translateX(0); /*reposiciona o container*/
+}
+
+img {
+  object-fit: contain; /* para as imagens não ficarem distorcidas*/
+  margin-top: 0px; /*tamanho da margem*/
+  width: 1006px;/*tamanho*/
+  height: 736px;/*tamanho*/
+}
